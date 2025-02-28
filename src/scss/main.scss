@@ -1,9 +1,9 @@
 @import "settings/fonts";
 @import "settings/colors";
-@import "normalize.css"; 
+@import "normalize.css";
 
 body {
   font-family: $font-base;
-  color: $text-color;
-  background-color: $background-color;
+  color: $color-grey-dark;
+  background-color: $color-background;
 }
