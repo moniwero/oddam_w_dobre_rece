@@ -1,0 +1,99 @@
+@use "../settings/colors.scss";
+
+.home-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2.375rem;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 31.02px;
+  }
+
+  &__decoration {
+    width: 253px;
+    height: 33px;
+    background-image: url("../../assets/Decoration.svg");
+    margin-bottom: 40.9px;
+  }
+
+  &__columns {
+    height: 325px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: colors.$color-background;
+    gap: 202px;
+
+    .home-steps__step {
+      width: 172px;
+      height: 130px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 76px;
+
+      h5 {
+        font-size: 1.125rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      h5::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background-color: colors.$color-grey-dark;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .ikon {
+        width: 83px;
+        height: 83px;
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .home-steps__button {
+    margin-top: 55px;
+    height: 118px;
+    width: 308px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.25rem;
+    color: colors.$color-grey-dark;
+    border: 1px solid colors.$color-grey-dark;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    opacity: 1;
+
+    &:hover {
+      background-color: colors.$color-background;
+      color: colors.$color-primary;
+    }
+  }
+}

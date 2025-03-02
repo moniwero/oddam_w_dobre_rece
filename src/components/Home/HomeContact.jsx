@@ -1,5 +1,5 @@
 const HomeContact = () => {
-    return <section><p>HomeContact</p></section>;
+    return <section id="contact">Treść sekcji Kontakt</section>;
   }
   
   export default HomeContact;
