@@ -1,5 +1,5 @@
 const HomeWhoWeHelp = () => {
-    return <section><p>HomeWhoWeHelp</p></section>;
+    return <section id="foundations">Treść sekcji komu pomagamy</section>;
   }
   
   export default HomeWhoWeHelp;
