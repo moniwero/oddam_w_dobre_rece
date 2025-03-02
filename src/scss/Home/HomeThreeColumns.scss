@@ -1,0 +1,45 @@
+@use "../settings/fonts.scss";
+
+.three-columns {
+  margin: 0;
+  padding: 0;
+  height: 384px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url(../../assets/3-Columns-Background.png);
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+    height: 252px;
+    padding-top: 46px;
+    padding-bottom: 86px;
+
+    h2 {
+      font-size: 5.625rem;
+      margin: 0;
+      font-weight: normal;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.125rem;
+      font-weight: normal;
+      padding-bottom: 28px;
+      line-height: 30px;
+    }
+
+    p {
+      margin: 0;
+      width: 334px;
+      height: 68px;
+      font-family: fonts.$font-alt;
+      line-height: 20px;
+      letter-spacing: -0.32px;
+    }
+  }
+}

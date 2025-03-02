@@ -1,5 +1,5 @@
 const HomeAbout = () => {
-    return <section><p>HomeAbout</p></section>;
-  }
-  
-  export default HomeAbout;
+  return <section id="about">Treść sekcji O co chodzi?</section>;
+};
+
+export default HomeAbout;

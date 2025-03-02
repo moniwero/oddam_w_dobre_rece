@@ -1,0 +1,55 @@
+@use "../settings/colors.scss";
+
+.home-hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 271px;
+
+  & h1 {
+    color: colors.$color-grey-dark;
+    font-size: 38px;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: -0.76px;
+  }
+
+  .main-text-decoration {
+    width: 253px;
+    height: 33px;
+    background-image: url("../../assets/Decoration.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 40px;
+    font-weight: normal;
+
+    a {
+      height: 118px;
+      width: 308px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 36px;
+      color: colors.$color-grey-dark;
+      border: 1px solid colors.$color-grey-dark;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      opacity: 1;
+
+      &:hover {
+        background-color: colors.$color-background;
+        color: colors.$color-primary;
+      }
+    }
+  }
+}
