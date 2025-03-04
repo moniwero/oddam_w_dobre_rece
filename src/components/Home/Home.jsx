@@ -22,8 +22,10 @@ const Home = () => {
       <HomeSteps />
       <HomeAbout />
       <HomeWhoWeHelp />
+      <section className="bc-contact-footer">
       <HomeContact />
       <HomeFooter />
+      </section>
     </div>
   );
 };
