@@ -37,7 +37,7 @@ const HomeHeader = () => {
             O nas
           </ScrollLink>
           <ScrollLink
-            to="foundations"
+            to="who_we_help"
             smooth={true}
             className="home-header__scroll-link"
           >
