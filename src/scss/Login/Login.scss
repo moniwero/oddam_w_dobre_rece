@@ -1,0 +1,107 @@
+@use "../settings/colors.scss";
+@use "../settings/fonts.scss";
+
+.login {
+  margin-top: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  &__decoration {
+    width: 253px;
+    height: 33px;
+    background-image: url("../../assets/Decoration.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
+
+  &__form {
+    width: 504px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-background {
+    width: 250px;
+    height: 215px;
+    background-color: colors.$color-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 67px 0 67px;
+  }
+
+  label {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+
+    input {
+      height: 40px;
+      border: none;
+      border-bottom: 0.75px solid colors.$color-grey-dark;
+      outline: none;
+      font-size: 1rem;
+      resize: none;
+      background-color: transparent;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 285px;
+    margin-top: 40px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  button {
+    padding: 0;
+    font-size: 1.125rem;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    transition: border 0.3s ease;
+    width: 120px;
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid colors.$color-grey-dark;
+      opacity: 1;
+    }
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 18px;
+    visibility: hidden;
+
+    &.show {
+      visibility: visible;
+    }
+  }
+}
