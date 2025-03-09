@@ -1,0 +1,54 @@
+@use "../settings/colors.scss";
+@use "../settings/fonts.scss";
+
+.logout {
+  margin-top: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    width: 414px;
+    height: 110px;
+    letter-spacing: -0.8px;
+  }
+
+  &__decoration {
+    width: 253px;
+    height: 33px;
+    background-image: url("../../assets/Decoration.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+  }
+
+  .start-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    border: 1px solid colors.$color-grey-dark;
+  }
+}
