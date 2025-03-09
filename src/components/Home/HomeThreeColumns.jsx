@@ -2,7 +2,7 @@ import "../../scss/Home/HomeThreeColumns.scss";
 
 const HomeThreeColumns = () => {
   return (
-    <section id="start" className="three-columns">
+    <section className="three-columns">
       <div className="column">
         <h2>10</h2>
         <h3>ODDANYCH WORKÓW</h3>
