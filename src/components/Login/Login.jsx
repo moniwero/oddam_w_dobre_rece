@@ -92,7 +92,7 @@ const Login = () => {
         <form className="login__form" onSubmit={handleSubmit}>
           <div className="form-background">
             <label className="label-email">
-              Email:
+              Email
               <input
                 type="email"
                 name="email"
@@ -103,7 +103,7 @@ const Login = () => {
               {!errors.email && <p className="error"></p>}
             </label>
             <label className="label-password">
-              Hasło:
+              Hasło
               <input
                 type="password"
                 name="password"

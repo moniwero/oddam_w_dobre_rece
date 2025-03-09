@@ -1,7 +1,7 @@
 @use "../settings/colors.scss";
 @use "../settings/fonts.scss";
 
-.login {
+.register {
   margin-top: 123px;
   display: flex;
   flex-direction: column;
@@ -21,12 +21,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 25px;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   &__form {
-    width: 504px;
-    height: 325px;
+    width: 499px;
+    height: 418px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@
 
   .form-background {
     width: 250px;
-    height: 215px;
+    height: 288px;
     background-color: colors.$color-background;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,7 @@
       font-size: 1rem;
       resize: none;
       background-color: transparent;
+      padding: 0;
     }
   }
 
@@ -91,7 +92,6 @@
       opacity: 1;
     }
   }
-
   .error {
     color: red;
     font-size: 14px;
